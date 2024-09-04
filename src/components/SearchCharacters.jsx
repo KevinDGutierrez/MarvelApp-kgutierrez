@@ -10,11 +10,11 @@ export const SearchCharacter = ({ searchCharacter }) => {
 
     return (
         <>
-            <nav className="navbar bg-body-tertiary">
+            <nav className="navbar bg-warning border-bottom border-body">
                 <div className="container-fluid">
                     <form className="d-flex" role="search" onSubmit={handleSubmit}>
-                        <input className="form-control me-2 border border-warning text-warning" type="search" placeholder="Search" aria-label="Search"value={query}onChange={(e) => setQuery(e.target.value)}/>
-                        <button className="btn btn-outline-warning border border-warning text-warning" type="submit">Buscar</button>
+                        <input className="form-control me-2 border border-warning text-warning" type="search" placeholder="Buscar" aria-label="Search"value={query}onChange={(e) => setQuery(e.target.value)}/>
+                        <button className="btn btn-outline-dark border border-dark text-dark" type="submit">Buscar</button>
                     </form>
                 </div>
             </nav>
